@@ -1,21 +1,17 @@
 #include <stdio.h>
-
-int stringlength(char str[]);
-
+//int stringlength(char str[]);
 int main()
 {
 	char str[] = "The quick brown fox";
-
-	printf ("The lenght of the string %s is %d ", 
-		str, stringlength(str));
-}
-
-int stringlength(char str[])
-{
-	int count = 0;
-	for (int i=0; str[i] != '\0'; i++)
+//int stringlength(char str[])
+//{
+	int count = 0, i;
+	for (i=0; str[i] != '\0'; i++)
 	{
+		//printf("%d\n", count);
 		count++;
 	}
-	return count;
+	printf ("The lenght of the string is %d ", count);
+	return 0;
+//}
 }
